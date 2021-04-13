@@ -1,0 +1,19 @@
+@layout('layout')
+
+@section('content')
+   <div class="text-light">
+      <h1 class="text-light my-5">{{ post.title }}</h1>
+      <p>
+         {{ post.excerpt }}
+      </p>
+      <p>
+         {{ post.date }}
+      </p>
+      <div>
+         {{ post.content }}
+      </div>
+   </div>
+@endsection
+
+
+

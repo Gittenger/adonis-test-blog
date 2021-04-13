@@ -1,0 +1,32 @@
+@layout('layout')
+
+@section('content')
+<div class="container d-flex flex-column justify-content-center align-items-center text-light my-5">
+      <h1>Let's talk.</h1>
+      <form style="width: 65%">
+         <div class="mb-3">
+            <label for="contactEmail" class="form-label">Your email:</label>
+            <input type="email" class="form-control" id="contactEmail" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">I'll never share your email with anyone else.</div>
+         </div>
+         <div class="mb-3">
+            <label for="contactPhone" class="form-label">Your phone number (optional):</label>
+            <input type="text" class="form-control" id="contactPhone" aria-describedby="phoneHelp">
+            <div id="phoneHelp" class="form-text">I'll never share your phone number with anyone else either.</div>
+         </div>
+         <div class="mb-3">
+            <label for="contactDesc" class="form-label">Send me something:</label>
+            <textarea type="text" class="form-control" id="contactDesc" rows="5" cols="33">
+            </textarea>
+         </div>
+         <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Send a copy to your email</label>
+         </div>
+         <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</div>
+
+@endsection
+
+

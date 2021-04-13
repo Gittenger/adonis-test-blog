@@ -1,0 +1,42 @@
+.profile-img {
+  border-radius: 50%;
+}
+
+a,
+a:link,
+a:visited {
+  color: var(--bs-blue);
+}
+
+a:hover {
+  color: var(--bs-purple);
+}
+
+.icons-list {
+  --color-react: #61dbfb;
+  --color-css: #2299f8;
+  --color-bootstrap: #6b429e;
+  --color-sass: #c76395;
+  --color-git: #e94e31;
+  --color-node: #73b058;
+  --color-docker: #2291e6;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  row-gap: 30px;
+  justify-content: center;
+  width: 85%;
+}
+.icons-list .icon-box {
+  display: grid;
+  place-items: center;
+  row-gap: 10px;
+}
+.icons-list .icon-box > :first-child {
+  width: 100px;
+  height: 100px;
+}
+.icons-list .icon-box .png-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}

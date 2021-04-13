@@ -1,0 +1,12 @@
+@layout('layout')
+
+@section('content')
+   <h1 class="text-light my-5">{{ title }}</h1>
+   <ul>
+      @each(post in posts)
+         <li><a href="/posts/{{post.id}}">{{ post.title }}</a></li>
+      @endeach
+   </ul>
+@endsection
+
+
