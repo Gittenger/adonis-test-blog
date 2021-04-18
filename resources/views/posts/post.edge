@@ -1,17 +1,12 @@
 @layout('layout')
 
 @section('content')
-   <div class="text-light">
-      <h1 class="text-light my-5">{{ post.title }}</h1>
-      <p>
-         {{ post.excerpt }}
+   <div class="container text-light">
+      <h1 class="text-light mb-2 mt-5">{{ post.title }}</h1>
+      <p class="blog-details__date mb-4">
+         {{ date }}
       </p>
-      <p>
-         {{ post.date }}
-      </p>
-      <div>
-         {{ post.content }}
-      </div>
+         <div class="blog-details__content">{{{ postMarkdown }}}</div>
    </div>
 @endsection
 

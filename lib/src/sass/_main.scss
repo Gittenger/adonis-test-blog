@@ -12,6 +12,15 @@ a:hover {
 	color: var(--bs-purple);
 }
 
+code {
+	color: var(--bs-cyan);
+	background: var(--bs-gray-dark);
+}
+
+code:not([class*='language-']) {
+	padding: 2px;
+}
+
 .icons-list {
 	--color-react: #61dbfb;
 	--color-css: #2299f8;
@@ -43,6 +52,19 @@ a:hover {
 				height: 100%;
 				object-fit: scale-down;
 			}
+		}
+	}
+}
+
+.blog-details {
+	&__date {
+		font-style: italic;
+		color: var(--bs-gray);
+	}
+
+	&__content {
+		pre {
+			margin-bottom: 1.5rem;
 		}
 	}
 }
